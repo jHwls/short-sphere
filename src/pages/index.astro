@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import { Image } from "astro:assets";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -34,6 +35,13 @@ import Card from '../components/Card.astro';
 			</defs>
 		</svg>
 		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+
+    <div style="width: 50%; margin-left: auto; margin-right: auto;">
+			<Image
+			src="https://mediacloud.theweek.com/image/upload/f_auto,t_primary-image-desktop@1/v1671723001/die%20hard%20x%20mas.jpg"
+			width="400" height="225" alt="Yippee ki yay" quality={50} >
+		</div>
+
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
